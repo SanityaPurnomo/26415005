@@ -1,0 +1,20 @@
+    1  nano 1-1.txt
+    2  sort coba
+    3  sort 1-1.txt
+    4  sort -r 1-1.txt
+    5  echo "jadi kalau -r itu sort descending"
+    6  printf("%d",NF)
+    7  awk -F " " {printf("%d",NF}
+    8  awk -F " " {printf("%d",NF)}
+    9  awk -F" " {printf("%d",NF)}
+   10  uniq 1-1.txt
+   11  wc -n 2 1-1.txt
+   12  wc --help
+   13  wc -c 1-1.txt
+   14  wc -m 1-1.txt
+   15  wc -l 1-1.txt
+   16  echo "kalau -c ngitung byte"
+   17  echo "kalau -m ngitung banyak char"
+   18  echo "kalau -l ngitung banyak line"
+   19  touch history3_080916
+   20  history

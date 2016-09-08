@@ -1,2 +1,3 @@
 ini mecoba 123
-ini coba strings
+ini coba strings 541
+ini coba angka 875
