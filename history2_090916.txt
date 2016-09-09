@@ -1,0 +1,14 @@
+    1  clear
+    2  ipconfig
+    3  sudo ipconfig
+    4  rm coba1.txt && "ok" || "error"
+    5  rm coba1.txt && echo "ok" || echo "error"
+    6  touch coba1.txt
+    7  rm coba1.txt && echo "ok" || echo "error"
+    8  echo "jadi pertama dee bilang error soale jek ga ada file e. trs le berhasil ok, le ga error"
+    9  awk -F" "'{print $1}' 1-1.txt
+   10* awk -F"ini"'{print $1}' 1
+   11* awk-F "
+   12  man awk
+   13  awk -F":"/m264/'{print $1}' /etc/passwd
+   14  history
