@@ -1,0 +1,20 @@
+1 pwd 
+2 ls -al
+3 mkdir lala 
+4 echo "mkdir untuk buat file" 
+5 rmdir lala 
+6 echo "rmdir untuk hapus file" 
+7 cat > coba.txt 
+8 saya 
+9 makan 
+10 nasi 
+11 ctrl-d 
+12 grep ^s coba.txt 
+13 grep i$ coba.txt
+14 echo "pwd untuk lihat kita di mana"
+15 echo "ls -al buat liat ada apa ae di dalam"
+16 echo "grep i$ cari yg huruf belakangnya i"
+17 echo "grep ^s cari yg depannya s"
+18 mv coba.txt lala/
+19 echo "mv untuk move file"
+20 history
