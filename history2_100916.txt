@@ -1,0 +1,14 @@
+    1  ls -al
+    2  cd ..
+    3  ls -al
+    4  fing --help
+    5  find --help
+    6  find -iname "cobased.txt" 
+    7  find ~ -empty 
+    8  echo "find -iname (file-nya) untuk cari file itu ada di mana"
+    9  echo "find ~ -empty untuk cari mana saja directory yg masih kosong"
+   10  awk '{print $2,$3;)' cobased.txt 
+   11  awk '{print $2,$3;}' cobased.txt 
+   12  echo "$2 artinya field yang ke 2"
+   13  echo "dollar 2 artinya field yang ke 2"
+   14  history

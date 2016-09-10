@@ -1,0 +1,15 @@
+  1 nano cobased.txt
+  2  ipconfig
+  3  ifconfig
+  4  sudo ifconfig
+  5  sed 's/mencoba/mencoba - coba/g'
+  6  cd public_html/
+  7  sed 's/mencoba/mencoba - coba/g'
+  8  cat cobased.txt 
+  9  sed 's/mecoba/mencoba - coba/g'
+  10  sed 's/mecoba/mencoba - coba/g' cobased.txt
+  11  eccho "s itu sebagai substitusi"
+  12  echo "s itu sebagai substitusi"
+  13  echo "pam ke 1 apa yg diganti, pam ke 2 diganti dengan apa"
+  14  echo "g untuk global"
+  15  history

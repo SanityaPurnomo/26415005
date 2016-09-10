@@ -1,0 +1,9 @@
+    1  whatis ls
+    2  whatis ifconfig
+    3  cd ..
+    4  tail cobased.txt 
+    5  tail -n N cobased.txt 
+    6  tail -n 1 cobased.txt 
+    7  echo "1 adalah number of lines yang ingin di print"
+    8  date
+    9  history
