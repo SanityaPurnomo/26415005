@@ -1,0 +1,12 @@
+    1  cd public_html/
+    2  ls -al
+    3  echo {1-100}
+    4  echo {1..100}
+    5  echo "fungsi di atas untuk generate angka dari 1 sampai 100"
+    6  seq 1 100
+    7  printf "%02d " {0..9}
+    8  echo "fungsi di atas untuk memberi tambahan a atas untuk memberi tambahan angka 0 di depan"
+    9  echo {w,t,}h{e{n{,ce{,forth}},re{,in,fore,with{,al}}},ither,at}
+   10  echo {a,b,c}{1,2,3}
+   11  echo "fungsi di atas untuk permutasi simbol dan angka"
+   12  history

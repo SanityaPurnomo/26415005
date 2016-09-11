@@ -1,0 +1,12 @@
+    1  pwd
+    2  ls -al
+    3  cat coba
+    4  rm coba
+    5  ls -al
+    6  cd public_html/
+    7  ls -al
+    8  echo "too bar" >> file.txt
+    9  ls -al
+   10  cat file.txt 
+   11  echo "dengan panah2 kita bisa langsung masukkan kalimat ke dalam file tanpa perlu nano"
+   12  history

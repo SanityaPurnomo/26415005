@@ -1,0 +1,13 @@
+    1  clear
+    2  cd ..
+    3  ls -al
+    4  read -r line < file
+    5  read -r line < file.txt
+    6  echo (a..z)
+    7  echo {a..z}
+    8  echo "fungsi di atas untuk generate alphabet from a to z"
+    9  printf "%c" {a..z}
+   10  echo "fungsi di atas untuk generate alphabet from a to z without
+       spaces between characters"
+   11  printf "%c\n" {a..z}
+   12  history
