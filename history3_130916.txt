@@ -1,0 +1,15 @@
+    1  cut --help
+    2  nano lala.txt
+    3  cut -d " " -f1 lala.txt
+    4  cut -d " " -f2 lala.txt
+    5  echo "mksd mya f1 f2 itu fiels ke berapa"
+    6  paste --help
+    7  paste -d " " -f1 lala.txt
+    8  cat lala.txt
+    9  paste -d " " -f2 lala.txt
+   10  paste coba
+   11  paste lala.txt
+   12  paste 1 2 lala.txt
+   13  paste -s lala.txt
+   14  touch history3_130916.txt
+   15  history
