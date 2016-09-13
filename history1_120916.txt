@@ -1,0 +1,9 @@
+    1  clear
+    2  echo foo{,,,,,,,,,,}
+    3  echo "fungsi ini untuk 10 copies of the same string"
+    4  echo "$x$y"
+    5  x=-n
+    6  y=" foo"
+    7  echo $x$y
+    8  echo ${#str}
+    9  history
