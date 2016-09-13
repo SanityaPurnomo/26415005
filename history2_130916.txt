@@ -1,0 +1,17 @@
+    1  touch lala.txt
+    2  ls -al
+    3  pwd
+    4  strings --help
+    5  strings -f coba.txt
+    6  strings -f lala.txt
+    7  nano lala.txt
+    8  strings -f lala.txt
+    9  strings -a lala.txt
+   10  strings -t d lala.txt
+   11  echo "jadi -t bisa melihat length string"
+   12  echo "kalau -a nampilin semua isi file"
+   13  grep i$coba
+   14  grep i$ lala.txt
+   15  cat lala.txt
+   16  touch history2_130916.txt
+   17  history
