@@ -1,0 +1,11 @@
+1 pwd 
+2 ls -al
+3 mkdir lala 
+4 echo "mkdir untuk buat file" 
+5 rmdir lala 
+6 echo "rmdir untuk hapus file" 
+7 cat > coba.txt 
+8 saya 
+9 makan 
+10 nasi
+11 ctrl-d
