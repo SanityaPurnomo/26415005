@@ -1,0 +1,10 @@
+  1 nano cobased.txt
+  2  ipconfig
+  3  ifconfig
+  4  sudo ifconfig
+  5  sed 's/mencoba/mencoba - coba/g'
+  6  cd public_html/
+  7  sed 's/mencoba/mencoba - coba/g'
+  8  cat cobased.txt 
+  9  sed 's/mecoba/mencoba - coba/g'
+  10  sed 's/mecoba/mencoba - coba/g' cobased.txt
