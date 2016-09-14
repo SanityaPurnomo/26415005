@@ -1,0 +1,14 @@
+1 cat > coba.txt 
+2 saya 
+3 makan 
+4 nasi 
+5 ctrl-d 
+6 grep ^s coba.txt 
+7 grep i$ coba.txt
+8 echo "pwd untuk lihat kita di mana"
+9 echo "ls -al buat liat ada apa ae di dalam"
+10 echo "grep i$ cari yg huruf belakangnya i"
+11 echo "grep ^s cari yg depannya s"
+12 mv coba.txt lala/
+13 echo "mv untuk move file"
+14 history
