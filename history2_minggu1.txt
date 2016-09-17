@@ -1,0 +1,9 @@
+1 ifconfig
+2 vi /etc/network/interfaces
+3 vi /etc/samba/smb.conf
+4 cd ..
+5 cat > userbaru.txt
+6 smbpasswd -a userbaru
+7 /etc/samba
+8 touch history2_minggu1.txt
+9 history
