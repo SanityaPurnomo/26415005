@@ -1,0 +1,10 @@
+1 awk -F "regex" 'program' files
+2 awk 'BEGIN { print "Here is a single \quote <'\''>" }'
+3 awk '{ if (length($0) > max) max = \ length($0) } END { print max }' inputfile
+4 awk 'length($0) > 80' inputfile
+5 awk 'NF > 0' data
+6 awk 'BEGIN { for (i = 1; i <= 7; i++) print int(101 * rand()) }'
+7 ls -l . | awk '{ x += $5 } ; END \ { print "total bytes: " x }' total bytes: 7449362
+8 awk -F: '{ print $1 }' /etc/passwd | sort
+9 awk 'END { print NR }' inputfile
+10 awk 'NR % 2 == 0' data
