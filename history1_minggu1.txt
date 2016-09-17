@@ -1,0 +1,15 @@
+1 ls -al
+2 adduser userbaru
+3 ls -al
+4 ls /home
+5 ps
+6 ps aux
+7 ps tree
+8 pstree
+9 cat > file.txt
+10 cat > file.txt &
+11 fg
+12 ps
+13 cat > file2.txt &
+14 jobs
+15 fg 1
