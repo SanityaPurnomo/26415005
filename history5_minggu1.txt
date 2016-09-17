@@ -1,0 +1,10 @@
+1 ls -l | awk '$6 == "Nov" { sum += $5 } END { print sum }'
+2 awk '$1  ~/J/' inputfile
+3 awk '$1  ~!/J/' inputfile
+4 awk 'BEGIN { print "He said \"hi!\" \ to her." }'
+5 echo aaaabcd | awk '{ sub(/a+/, \ "<A>"); print }'
+6 ls -lh | awk '{ owner = $3 ; $3 = $3 \ " 0wnz"; print $3 }' | uniq
+7 awk '{ $2 = $2 - 10; print $0 }' inventory
+8 awk '{ $6 = ($5 + $4 + $3 + $2); print \ $6' inventory
+9 echo a b c d | awk '{ OFS = ":"; $2 = "" > print $0; print NF }'
+10 echo a b c d | awk ’{ OFS = ":"; \ $2 = ""; $6 = "new" > print $0; print NF }’
