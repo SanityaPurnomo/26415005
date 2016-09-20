@@ -1,0 +1,10 @@
+1 vim +143 filename.txt
+2 echo "Go to the 143rd line of file"
+3 vim +/search-term filename.txt
+4 echo "o to the first match of the specified"
+5 vim -R /etc/passwd
+6 echo "Open the file in read only mode"
+7 diff -w name_list.txt name_list_new.txt
+8 echo "Ignore white space while comparing"
+9 sort names.txt
+10 echo "Sort a file in ascending order"
