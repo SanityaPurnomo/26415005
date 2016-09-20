@@ -1,0 +1,12 @@
+1 sort -r names.txt
+2 echo "Sort a file in descending order"
+3 sort -t: -k 3n /etc/passwd | more
+4 echo "Sort passwd file by 3rd field"
+5 ls *.jpg | xargs -n1 -i cp {} /external-hard-drive/directory
+6 echo "Copy all images to external hard-drive"
+7 cat url-list.txt | xargs wget –c
+8 echo "Download all the URLs mentioned in the url-list.txt file"
+9 gzip test.txt
+10 echo "To create a *.gz compressed file"
+11 gzip -d test.txt.gz
+12 echo "To uncompress a *.gz file"
