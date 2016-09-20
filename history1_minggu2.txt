@@ -1,0 +1,12 @@
+1 tar cvf archive_name.tar dirname/
+2 echo "Create a new tar archive"
+3 tar xvf archive_name.tar
+4 echo "Extract from an existing tar archive"
+5 tar tvf archive_name.tar
+6 echo "View an existing tar archive"
+7 grep -i "the" demo_file
+8 echo "Search for a given string in a file (case in-sensitive search)"
+9 grep -A 3 -i "example" demo_text
+10 echo "Print the matched line, along with the 3 lines after it"
+11 grep -r "ramesh" *
+12 echo "Search for a given string in all files recursively"
