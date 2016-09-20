@@ -1,0 +1,10 @@
+1 sed -n '1!G;h;$p' thegeekstuff.txt
+2 echo "Print file content in reverse order"
+3 sed '/./=' thegeekstuff.txt | sed 'N; s/\n/ /'
+4 echo "Add line number for all non-empty-lines in a file"
+5 awk '!($0 in array) { array[$0]; print }' temp
+6 echo "Remove duplicate lines using awk"
+7 awk -F ':' '$3==$4' passwd.txt
+8 echo "Print all lines from /etc/passwd that has the same uid and gid"
+9 awk '{print $2,$5;}' employee.txt
+10 echo "Print only specific field from a file."
