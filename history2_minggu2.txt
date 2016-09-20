@@ -1,0 +1,10 @@
+1 find -iname "MyCProgram.c"
+2 echo "Find files using file-name ( case in-sensitve find)"
+3 find -iname "MyCProgram.c" -exec md5sum {} \;
+4 echo "Execute commands on files found by the find command"
+5 find ~ -empty
+6 echo "Find all empty files in home directory"
+7 ssh -l jsmith remotehost.example.com
+8 echo "Login to remote host"
+9 ssh -v -l jsmith remotehost.example.com
+10 echo "Debug ssh client"
