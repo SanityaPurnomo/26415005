@@ -1,0 +1,9 @@
+1 dpkg -l | awk ' {print $2} ' > installed
+2 dpkg -l | awk ' /'vim'/ {print $2} '
+3 awk ' {print $1,$3} '
+4 awk ' {print $0} '
+5 awk ' /'pattern'/ {print $2} '
+6 awk -f script.awk inputfile
+7 awk ' program ' inputfile
+8 awk "BEGIN { print \"Hello, world!!\" }"
+10 awk '{ print }'
