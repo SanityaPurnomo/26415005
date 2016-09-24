@@ -1,0 +1,8 @@
+1 awk 'BEGIN { print "He said \"hi!\" \ to her." }'
+2 ls -lh | awk '{ owner = $3 ; $3 = $3 \ " 0wnz"; print $3 }' | uniq
+3 awk '{ $2 = $2 - 10; print $0 }'
+4 awk '{ $6 = ($5 + $4 + $3 + $2); print \ $6'
+5 echo a b c d | awk '{ OFS = ":"; $2 = "" > print $0; print NF }'
+6 echo a b c d | awk '{OFS = ":"; \ $2 = ""; $6 = "new" > print $0; print NF }’
+7 echo a b c d e f | awk \ { print "NF =", NF;> NF = 3; print $0}'
+8 echo ' a b c d ' |  awk 'BEGIN { FS = \ "[ \t\n]+" } > { print $2 }'
