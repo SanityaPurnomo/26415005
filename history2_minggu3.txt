@@ -1,0 +1,7 @@
+1 awk -F "" 'program' files
+2 awk -F "regex" 'program' files
+3 awk 'BEGIN { print "Here is a single \quote <'\''>" }'
+4 awk '{ if (length($0) > max) max = \length($0) }END { print max }' inputfile
+5 awk 'length($0) > 80' inputfile
+6 awk 'NF > 0' data
+7 awk 'BEGIN { for (i = 1; i <= 7; i++) print int(101 * rand()) }'
