@@ -1,0 +1,8 @@
+1 ls -l . | awk '{ x += $5 } ; END \ { print "total bytes: " x }'
+2 ls -l . | awk '{ x += $5 } ; END \ { print "total kilobytes: " (x + \ 1023)/1024 }'
+3 awk -F: '{ print $1 }' /etc/passwd | sort
+4 awk 'END { print NR }' inputfile
+5 awk 'NR % 2 == 0' data
+6 ls -l | awk '$6 == "Nov" { sum += $5 } END { print sum }'
+7 awk '$1  ~/J/' inputfile
+8 awk 'BEGIN { print "He said \"hi!\" \to her." }'
