@@ -1,0 +1,14 @@
+  1  clear
+  2  str="hello world"
+  3  echo ${str:6}
+  4  echo ${str:5}
+  5  echo ${str:4}
+  6  echo ${str:7:2}
+  7  str="hello world"
+  8  echo ${str:7:2}
+  9  echo "fungsi di atas untuk substring dari string yang ke 6. Parameter ke 2 ambil sebanyak berapa"
+  10  declare -u var
+  11  var="foo bar"
+  12  echo $var
+  13  echo "fungsi di atas untuk uppercase a string"
+  14  history
