@@ -1,0 +1,12 @@
+
+  1 touch cobaawk
+  2 nano cobaawk
+  3 cat cobaawk
+  4 awk 'BEGIN (print "mulai"} {print} END {print "selesai"} < cobaawk
+  5 awk 'BEGIN (print "mulai"} {print} END {print "selesai"}' < cobaawk
+  6 awk 'BEGIN {print "mulai"} {print} END {print "selesai"}' < cobaawk
+  7 awk 'BEGIN {print "mulai} {printf("%d: %s %d\n",NR,$0,NF)} END {print "selesa"}; < cobaawk
+  8 awk 'BEGIN {print "mulai} {printf("%d: %s %d\n",NR,$0,NF)} END {print "selesai"}' < cobaawk
+  9 awk 'BEGIN {print "mulai"} {printf("%d: %s %d\n",NR,$0,NF)} END {print "selesai"}' < cobaawk
+  10 clear
+  11 history
