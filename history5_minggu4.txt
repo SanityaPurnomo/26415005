@@ -1,0 +1,17 @@
+    1  touch 1-1.txt
+    2  ls -al
+    3  pwd
+    4  strings --help
+    5  strings -f coba.txt
+    6  strings -f 1-1.txt
+    7  nano 1-1.txt
+    8  strings -f 1-1.txt
+    9  strings -a 1-1.txt
+   10  strings -t d 1-1.txt
+   11  echo "jadi -t bisa melihat length string"
+   12  echo "kalau -a nampilin semua isi file"
+   13  grep i$coba
+   14  grep i$ 1-1.txt
+   15  cat 1-1.txt
+   16  touch history1_080916.txt
+   17  history
