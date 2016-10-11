@@ -1,0 +1,27 @@
+no 1
+curl -s http://www.elevenia.co.id/prd-apple-iphone-7-plus-black-128gb-garansi-6242166 | grep "Harga Akhir" -A2 | cut -d">" -f2 |cut -d"<" -f1 |xargs | cut -d" " -f4
+perintah perl untuk cekharga.pl :
+#!/bin/bash
+
+harga = curl -s http://www.elevenia.co.id/prd-apple-iphone-7-plus-black-128gb-garansi-6242166 | grep "Harga Akhir" -A2 | cut -d">" -f2 |cut -d"<" -f1 |xargs | cut -d" " -f4
+echo `date` "|" $harga ">>~/public_html/m26415005/harga
+if ($harga lt '15.000.000') {
+    print "'$jual' sudah dibawa 15 juta.\n";
+    mail -s m26415005@john.petra.ac.id;
+}
+codingan crontab
+0 7-19 * * 1-5 ~/home/m26415005/public_html/cekiphone.sh 
+
+
+no 2
+curl -s http://stats.labs.apnic.net/ipv6/ID | grep "'ASN', 'AS Name', 'IPv6 Capable', 'IPv6 Preferred', 'Samples'" -A611 | cut -d">" -f2 |cut -d "<" -f1 > ip.csv
+script1.pl
+#!/usr/bin/perl
+open FILE, "ip.txt" or die "No file found";
+open(my $fh, '>', 'ip2.txt');
+while($str=<FILE>)
+{
+  #print $str;
+  $str =~ s/"["<a href=\"http://stats.labs.apnic.net/ipv6/"//g;
+  print $fh $str;
+}
