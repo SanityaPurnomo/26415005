@@ -1,0 +1,18 @@
+  1  ls -al
+  2  touch history1_minggu5.txt
+  3  cat > history1_minggu5.txt 
+  4  cat history1_minggu5.txt 
+  5  mkdir hai
+  6  pwd
+  7  cp history1_minggu5.txt /home/m26415005/public_html/
+  8  cp history1_minggu5.txt /home/m26415005/public_html/hai/
+  9  ls -al
+  10  cd hai
+  11  ls -al
+  12  cd ..
+  13  ls
+  14  ls -a
+  15  rm -rf hai
+  16  ls -al
+  17  cat history1_minggu5.txt 
+  18  history
