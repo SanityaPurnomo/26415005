@@ -44,3 +44,19 @@ def main() :
 
 if __name__ == '__main__':
     unittest.main()
+
+
+
+#!/usr/bin/python
+
+def main() :
+
+	import sys
+	try:
+    		total = sum(int(arg) for arg in sys.argv[1:])
+    		print 'sum =', total
+	except ValueError:
+    		print 'Please supply integer arguments'
+
+if __name__ == '__main__' :
+	main();
