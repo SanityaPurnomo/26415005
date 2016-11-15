@@ -53,3 +53,14 @@ from django.http import HttpResponse
 def index(request):
     return HttpResponse("Hello World. You're at the polls index.")
 
+
+
+
+--isi urls.py
+from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name = 'index'),
+]
