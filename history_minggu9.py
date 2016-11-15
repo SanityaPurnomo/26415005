@@ -29,3 +29,10 @@ def main():
 
 if __name__ == '__main__':
     main();
+
+
+
+
+
+
+awk -F '{"name":' '{for(i=2 ; i <= NF ; i++) {print $i}}' source.txt | grep "Cabe Merah" | sed 's/[{}"]//g' | sed 's/,/ | /g' | sed 's/series://g' | awk -F'|' '{printf("%s",$1)}; {for(i=8 ; i<NF ; i++){printf("%s ",$i);}{printf("\n");}}'
