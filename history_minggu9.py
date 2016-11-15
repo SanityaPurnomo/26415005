@@ -42,3 +42,14 @@ awk -F '{"name":' '{for(i=2 ; i <= NF ; i++) {print $i}}' source.txt | grep "Cab
 
 
 awk -F '{"name":' '{for(i=2 ; i <= NF ; i++) {print $i}}' $source | grep "Cabe Merah" | sed 's/[{}"]//g' | sed 's/,/| /g' | sed 's/series://g' | sed 's/[0-9]://g' | awk -F'|' '{printf("%s ",$1)}; {for(i=8 ; i<NF ; i++){printf("%d ",$i);}{printf("\n");}}'
+
+
+
+
+
+--isi views.py
+from django.http import HttpResponse
+
+def index(request):
+    return HttpResponse("Hello World. You're at the polls index.")
+
