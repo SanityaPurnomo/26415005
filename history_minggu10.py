@@ -64,3 +64,24 @@ def list(request):
     context = {'all_cabe': all_cabe}
     return render(request,'priceAnalysis/listdata.html',context)
 
+
+
+
+
+--isi detail.html
+{% extends 'priceAnalysis/base.html' %}
+{% block title %}
+  List - {{ cabe.name }}
+{% endblock %}
+{% block list_active %}active{% endblock %}
+{% block body %}
+  <h1>{{ cabe.name }} </h1>
+  {% for item in cabe.bulan_set.all %}
+    <h4>{{ item.bulan }} - {{ item.tahun }}</h4>
+    <ul>
+      {% for item2 in item.harga_set.all %}
+        <li>{{ item2.price }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endblock %}
