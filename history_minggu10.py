@@ -40,3 +40,27 @@ urlpatterns = [
     url(r'^(?P<cabe_id>[0-9]+)$', views.detail, name='detail'),
     url(r'^datacabe/$', views.list, name='list'),
 ]
+
+
+
+
+
+--isi views.py
+from django.http import HttpResponse, Http404
+from django.shortcuts import render,get_object_or_404
+#from django.views import generic
+from .models import Cabe, Bulan, Harga
+
+def index(request):
+    return render(request, 'priceAnalysis/index.html')
+
+def detail(request, cabe_id):
+    cabe = get_object_or_404(Cabe, pk=cabe_id)
+    context = {'cabe' : cabe}
+    return render(request, 'priceAnalysis/detail.html', context)
+
+def list(request):
+    all_cabe = Cabe.objects.all()
+    context = {'all_cabe': all_cabe}
+    return render(request,'priceAnalysis/listdata.html',context)
+
