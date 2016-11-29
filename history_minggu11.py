@@ -44,3 +44,24 @@ urlpatterns = [
     url(r'^datacabe/$', views.list, name='list'),
     url(r'^simple_chart/$',views.simple_chart,name="simple_chart"),
 ]
+
+
+
+
+
+--coba html dari bokeh
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment with Bokeh</title>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.js"></script>
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.0.min.css">
+    {{the_script|safe}}
+</head>
+<body>
+
+    {{the_div|safe}}
+
+</body>
+</html>
