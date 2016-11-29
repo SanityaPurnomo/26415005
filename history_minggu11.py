@@ -26,3 +26,21 @@ def list(request):
     all_cabe = Cabe.objects.all()
     context = {'all_cabe': all_cabe}
     return render(request,'priceAnalysis/listdata.html',context)
+
+
+
+
+
+
+--isi dari urls.py supaya bisa ke bokeh html-
+from django.conf.urls import url
+from . import views
+
+app_name = 'priceAnalysis'
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+    url(r'^(?P<cabe_id>[0-9]+)$', views.detail, name='detail'),
+    url(r'^datacabe/$', views.list, name='list'),
+    url(r'^simple_chart/$',views.simple_chart,name="simple_chart"),
+]
