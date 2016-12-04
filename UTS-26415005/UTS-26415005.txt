@@ -1,0 +1,11 @@
+nomor 1
+wget http://api.worldbank.org/v2/en/indicator/SI.POV.GINI?downloadformat=csv
+
+unzip SI.POV.GINI?downloadformat=csv -d /home/m26415005/extractSI.POV.GINI?downloadformat=csv
+
+awk -F "\",\"" 'NR>5{for (i=5;i<=71;++i)b[$2]+=$i;for(i=5;i<=71;++i)d[$2]+=$i;for(i=5;i<=71;++i)if($i ~ /^[0-9]/)c[$2]+=1;a[$2]=$2;max[$2]=$5;for (i=5;i<=71; ++i)if($i>max[$2])max[$2]=$i;for(i=5;i<=71;++i)if($i>0)min[$2]=$i}{for (i in b) if(b[i]==0)b[i]="-nan";for(i in d)if(c[i]>0);else d[i]="-nan";for (i in max)if(max[i]>=0);else max[$2]="-nan";for(i in min)if(min[i]>=0);else min[i]="-nan";}BEGIN{printf"Negara Hitung Jumlah rata-rata Maksimum Minimum\n"}END{for (i in b)if(c[i]>0)printf"%s %s %s %s %s %s\n",a[i],c[i],b[i],d[i]/c[i],max[i],min[i];else printf"%s %s %s %s %s %s\n",a[i],"0",b[i],d[i],max[i],min[i];}' API_SI.POV.GINI_DS2_en_csv_v2.csv |  sed s/\"//g | sort -k1
+
+
+nomor 2
+curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d "prop=35&repo=lhk03provinsi&tanggal=24&bulan=10&tahun=16" -k https://aplikasi.pertanian.go.id/smshargakab/lhk03prov.asp
+
